@@ -45,7 +45,7 @@ const Details = ({ route, navigation }) => {
   const { data } = route.params
 
   return (
-    <SafeAreaView style={{ flex: 1 }}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: 'white' }}>
       <FocusedStatusBar
         barStyle="dark-content"
         backgroundColor="transparent"
@@ -67,7 +67,7 @@ const Details = ({ route, navigation }) => {
         <RectButton minWidth={170} fontSize={SIZES.large} {...SHADOWS.dark} />
       </View>
 
-      {/* <FlatList
+      <FlatList
         data={data.bids}
         renderItem={({ item }) => <DetailsBid bid={item} />}
         keyExtractor={(item) => item.id}
@@ -96,7 +96,7 @@ const Details = ({ route, navigation }) => {
             </View>
           </React.Fragment>
         )}
-      /> */}
+      />
     </SafeAreaView>
   )
 }
