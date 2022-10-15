@@ -1,6 +1,21 @@
 import React from "react";
+import { createStackNavigator } from "@react-navigation/stack";
+import { NavigationContainer, DefaultTheme } from "@react-navigation/native";
 import { useFonts } from "expo-font";
 
+import Home from "./screens/Home";
+import Details from "./screens/Details";
+
+const theme = {
+  ...DefaultTheme,
+  colors: {
+    ...DefaultTheme.colors,
+    background: "transparent",
+  },
+};
+
+// Like React Router
+const Stack = createStackNavigator();
 
 const App = () => {
   const [loaded] = useFonts({
