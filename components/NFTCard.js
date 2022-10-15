@@ -3,7 +3,7 @@ import { View, Image } from 'react-native'
 
 import { COLORS, SIZES, SHADOWS, assets } from '../constants'
 import { CircleButton } from './Button'
-import { SubInfo, NFTTitle } from './SubInfo'
+import { SubInfo, NFTTitle, EthPrice } from './SubInfo'
 
 const NFTCard = ({ data }) => {
   return (
@@ -45,6 +45,17 @@ const NFTCard = ({ data }) => {
           titleSize={SIZES.large}
           subTitleSize={SIZES.small}
         />
+
+        <View
+          style={{
+            marginTop: SIZES.font,
+            flexDirection: 'row',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+          }}
+        >
+          <EthPrice price={data.price} />
+        </View>
       </View>
     </View>
   )
