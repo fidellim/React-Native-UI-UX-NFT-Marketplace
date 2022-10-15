@@ -6,6 +6,8 @@ import { CircleButton, RectButton } from './Button'
 import { SubInfo, NFTTitle, EthPrice } from './SubInfo'
 
 const NFTCard = ({ data }) => {
+  const navigation = useNavigation()
+
   return (
     <View
       style={{
@@ -55,7 +57,11 @@ const NFTCard = ({ data }) => {
           }}
         >
           <EthPrice price={data.price} />
-          <RectButton minWidth={120} fontSize={SIZES.font} />
+          <RectButton
+            minWidth={120}
+            fontSize={SIZES.font}
+            handlePress={() => navigation.navigate('Details', { data })}
+          />
         </View>
       </View>
     </View>
