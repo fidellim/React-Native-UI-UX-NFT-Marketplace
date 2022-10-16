@@ -20,8 +20,8 @@ A modern NFT Marketplace mobile application (iOS and Android)
 
 ### Links
 
-- Solution URL: [Solution]()
-- Live Site URL: [Live Site]()
+- Solution URL: [Solution](https://github.com/fidellim/React-Native-UI-UX-NFT-Marketplace)
+- Live Site URL: [Live Site](https://pronef-fidellim.netlify.app/)
 
 ## My process
 
