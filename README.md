@@ -20,8 +20,8 @@ A modern NFT Marketplace mobile application (iOS and Android)
 
 ### Links
 
-- Solution URL: [Solution](https://github.com/fidellim/Calculator-FEM)
-- Live Site URL: [Live Site](https://calculator-fem-fidellim.netlify.app/)
+- Solution URL: [Solution]()
+- Live Site URL: [Live Site]()
 
 ## My process
 
